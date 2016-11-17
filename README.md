@@ -1,5 +1,5 @@
 # schnorr-signature
-Schnorr signature is a digital signature produced by the Schnorr signature algorithm. Its security is based on the intractability of certain discrete logarithm problems. 
+Schnorr signature is a digital signature produced by the Schnorr signature algorithm. Its security is based on the intractability of certain discrete logarithm problems. Written in Java.
 
 Algorithm:
 
