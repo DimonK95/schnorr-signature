@@ -17,16 +17,14 @@ import java.util.Arrays;
 public class Signature {
 
 
-    public static void checkSign(String path, String pathPublicKey, String pathPrivateKey, String pathSign) throws IOException, NoSuchAlgorithmException {
+    public static void checkSign(String path, String pathPublicKey, String pathSign) throws IOException, NoSuchAlgorithmException {
         System.out.println("cheking sign");
         Key PublicKey = new Key(pathPublicKey);
-        Key PrivateKey = new Key(pathPrivateKey);
         Key Sign = new Key(pathSign);
         BigInteger q = PublicKey.get(0);
         BigInteger p = PublicKey.get(1);
         BigInteger g = PublicKey.get(2);
         BigInteger y = PublicKey.get(3);
-        BigInteger w = PrivateKey.get(0);
         BigInteger s1 = Sign.get(0);
         BigInteger s2 = Sign.get(1);
 

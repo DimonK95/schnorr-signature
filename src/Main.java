@@ -29,7 +29,7 @@ public class Main {
             }
             if (type == 3) {
                 String pathFile = s.next();
-                Signature.checkSign(pathFile, pathPublicKey, pathPrivateKey, pathSign);
+                Signature.checkSign(pathFile, pathPublicKey, pathSign);
             }
             if (type == 4){
                 break;
